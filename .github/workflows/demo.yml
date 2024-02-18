@@ -10,3 +10,5 @@ jobs:
         run: npm version
       - name: display nodejs version
         run: node --version
+      - name: Run ls -lrt
+        run: ls -lart
