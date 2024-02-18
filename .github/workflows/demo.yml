@@ -8,3 +8,5 @@ jobs:
         uses: actions/checkout@v4
       - name: check Nodejs version
         run: npm version
+      - name: display nodejs version
+        run: node --version
