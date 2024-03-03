@@ -19,5 +19,5 @@ jobs:
         - name : Run multiple commands
           run: |
             echo "First command basic of github actions!"
-            echP "deploy and test you project!"
+            echo "deploy and test you project!"
 
