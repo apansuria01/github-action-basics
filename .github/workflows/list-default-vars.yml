@@ -16,5 +16,5 @@ jobs:
 
       - name: print value of secrets
         run: |
-            echo "MY_TOKEN = ${{secrets}}"
+            echo "MY_TOKEN = ${{secrets.MY_TOKEN}}"
         
