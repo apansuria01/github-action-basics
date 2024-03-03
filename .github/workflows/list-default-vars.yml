@@ -14,5 +14,7 @@ jobs:
           echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
           echo "GITHUB_JOB: $GITHUB_JOB"
 
-
-    
+      - name: print value of secrets
+        run: |
+            echo "MY_TOKEN = ${{secrets}}"
+        
