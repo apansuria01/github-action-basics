@@ -20,4 +20,9 @@ jobs:
           run: |
             echo "First command basic of github actions!"
             echo "deploy and test you project!"
-
+   build-api:
+    runs-on: windows-latest
+    steps:
+      - name: build-api
+        run: echo "Building API"
+  
