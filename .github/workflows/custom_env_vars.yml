@@ -1,0 +1,16 @@
+name: 'Custom env variables demo'
+on:
+  workflow_dispatch:
+env:
+    DAY_OF_WEEK: 'Monday'
+    testvar: 'value-1'
+jobs:
+    main_job:
+        name: Print env variables
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Print values of env variables
+              run: |
+                echo "DAY_OF_WEEK: $DAY_OF_WEEK"
+                echo "testvar: $testvar"
