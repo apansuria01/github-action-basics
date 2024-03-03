@@ -32,3 +32,9 @@ jobs:
     steps:
        - name: build-db
          run: echo "Building DB"
+  package:
+     needs: [build-app, build-db]
+     runs-on: macos-latest
+     steps:
+       - name: package
+         run: echo "Packaging the application"
