@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: checkout the code
-          uses: actions/checkou@v3
+          uses: actions/checkout@v3
 
         - name: Run single command using the runner shell
           run: echo "Hello,This is a basic demo of github actions.!"
