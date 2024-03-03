@@ -25,3 +25,10 @@ jobs:
     steps:
       - name: build-api
         run: echo "Building API"
+    
+  build-db:
+    needs: build-app
+    runs-on: windows-latest
+    steps:
+       - name: build-db
+         run: echo "Building DB"
