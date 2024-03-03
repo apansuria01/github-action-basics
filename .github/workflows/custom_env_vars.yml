@@ -8,6 +8,10 @@ jobs:
     main_job:
         name: Print env variables
         runs-on: ubuntu-latest
+
+        env:
+            DAY_OF_WEEK: 'Tuesday'
+            testvar: 'value-2'
         
         steps:
             - name: Print values of env variables
