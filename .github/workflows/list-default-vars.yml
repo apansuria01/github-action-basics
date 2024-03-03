@@ -1,0 +1,8 @@
+name: List github varia
+on: 
+    workflow_dispatch:
+jobs:
+  ubuntu-enviroment-variables:
+    runs-on: ubuntu-latest
+    steps:
+     - run: env
