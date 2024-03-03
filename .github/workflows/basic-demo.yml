@@ -1,0 +1,23 @@
+# This is basic demo to get started with github actions
+name: A basic demo of github actions
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+   
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+        - name: checkout the code
+          uses: actions/checkou@v3
+
+        - name: Run single command using the runner shell
+          run: echo "Hello,This is a basic demo of github actions.!"
+        - name : Run multiple commands
+          run: |
+            echo "First command basic of github actions!"
+            echP "deploy and test you project!"
+
