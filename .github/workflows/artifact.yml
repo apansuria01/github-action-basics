@@ -8,7 +8,7 @@ jobs:
        steps:
             - name: "creating local file"
               run: |
-                echo "Hello World,How are you today?" > hello.txt
+                echo "Hello World,How are you today?" > file.txt
             - uses: actions/upload-artifact@v2
               with:
                 name: file
